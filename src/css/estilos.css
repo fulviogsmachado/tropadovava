@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body {
+    background-image: url(../imagem/vah.png);
+    width: 100vh;
+    margin: auto;
+
+}
+
+div.titulo {
+    font-family: Oswald;
+    color: #f2f2f2;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+
+
+div.agentes {
+    display: flex;
+    flex-wrap: wrap;   
+    gap: 20px;
+}
+
+div.agente img {
+    width: 200px;
+    object-fit: cover;
+}
+
+footer {
+    color: #f2f2f2;
+    text-align: center;
+}
+
+
+
+
+@media (max-width: 375px) {
+    div.agentes {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    div.agentes img{
+        width: 25%
+    }
+}
